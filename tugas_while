@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Perulangan While</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 50%; margin: 20px auto; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: blue; }
+        td:nth-child(2) { text-align: center; } 
+    </style>
+</head>
+<body>
+    <h1>Hasil Perulangan While (Perkalian 3)</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Operasi</th>
+                <th>Hasil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            
+            $angka = 1; 
+            $pengali = 3;
+
+            while ($angka <= 10) {
+                $hasil = $pengali * $angka;
+                
+                echo "<tr>";
+                echo "<td>" . $pengali . " x " . $angka . "</td>";
+                echo "<td>" . $hasil . "</td>";
+                echo "</tr>";
+
+                $angka++; 
+            }
+            ?>
+        </tbody>
+    </table>
+
+</body>
+</html>
